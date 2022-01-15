@@ -9,6 +9,7 @@ body{
 }
 
 #navbar{
+    
     display: flex;
     background-color: black;
     justify-content: space-around;
@@ -148,7 +149,6 @@ body{
 #slider{
     margin-bottom: 20px;
     position: relative;
-    height: 50px;
     background: lightgray;
     height: 65vh;    
 }
@@ -175,8 +175,8 @@ body{
     transform: scale(0.9);
     opacity: 0.5;
     transition: all 0.3s;
-    height: 350px; 
-    width: 350px;
+    height: 300px; 
+    width: 300px;
     padding: 0 100px 0 100px;
 }
 
@@ -187,7 +187,6 @@ body{
 
 .slider-card img{
     background-blend-mode:saturation;
-    width: 40px;
     padding: 4px;
     transform: rotate(25deg);
     margin-top: -36px;
@@ -196,7 +195,6 @@ body{
 
 .slider-card .img-1{
     background-blend-mode:difference;
-    width: 40px;
     padding: 4px;
     margin-top: -25px;
     margin-left: -15px;
@@ -205,7 +203,6 @@ body{
 
 .slider-card .m-t{
     background-blend-mode:difference;
-    width: 40px;
     padding: 4px;
     margin-top: 11px;
     margin-left: 3px;
@@ -271,7 +268,7 @@ body{
     padding: 15px;
     margin: 8px;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 1.5em;
 }
 
@@ -286,10 +283,12 @@ body{
 
 .f-product-item-1 img{
     transform: rotate(25deg);
+    
 }
 
 .f-product-item-2 img{
     transform: rotate(-25deg);
+    margin-right: 60px;
 }
 
 /* Products End */
@@ -317,6 +316,7 @@ footer{
 }    
 
 @media(max-width:576px){
+
     #navbar ul{
         display: none;
     }
@@ -330,8 +330,13 @@ footer{
         width: 100%;
     }
 
+    #navbar img{
+        padding-right: 46px;
+        margin-right: 57px;
+    }
+
     #slider{
-        height: 90vh;
+        height: 75vh;
     }
 
     .slider-card img{
@@ -372,7 +377,7 @@ footer{
     }
 
     .product-item{
-        width: 400px;
+        width: 380px;
     }
 
     .f-product-item-1{
@@ -386,8 +391,8 @@ footer{
         padding-left: 60px;
     }
     .f-product-item-2 img{
-        width: 200px;
-        padding-left: 60px;
+        width: 180px;
+        padding-left: 50px;
     }
 
     .f-product-info{
